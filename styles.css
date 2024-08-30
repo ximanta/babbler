@@ -107,3 +107,35 @@ select, input[type="range"] {
         flex-direction: column;
     }
 }
+
+.help-link, .back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.help-link:hover, .back-link:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #333;
+    margin-top: 1.5rem;
+}
+
+ol, ul {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    ol, ul {
+        padding-left: 1rem;
+    }
+}
