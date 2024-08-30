@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babbler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech Application</h1>
+        <img src="images/RealAvtaar2.jpg" alt="Avatar" class="avatar">
+        <textarea id="textInput" placeholder="Type your text here..."></textarea>
+        <div class="controls">
+            <button id="speakButton">Speak</button>
+            <button id="clearButton">Clear</button>
+        </div>
+        <div class="options">
+            <label for="voiceSelect">Voice:</label>
+            <select id="voiceSelect"></select>
+            <label for="rateRange">Rate:</label>
+            <input type="range" id="rateRange" min="0.5" max="2" step="0.1" value="1">
+            <span id="rateValue">1</span>
+        </div>
+        <div id="statusIndicator" class="status-indicator"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
