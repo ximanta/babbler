@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rateRange = document.getElementById('rateRange');
     const rateValue = document.getElementById('rateValue');
     const statusIndicator = document.getElementById('statusIndicator');
+    const stopButton = document.getElementById('stopButton');
 
     let voices = [];
 
@@ -44,7 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function stopSpeaking() {
+        speechSynthesis.cancel();
+        textInput.value = '';
+        statusIndicator.style.display = 'none';
+    }
+
     speakButton.addEventListener('click', speak);
+    stopButton.addEventListener('click', stopSpeaking);
 
     clearButton.addEventListener('click', () => {
         textInput.value = '';

@@ -50,15 +50,34 @@ button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
-    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-button:hover {
+#speakButton {
+    background-color: #4CAF50;
+}
+
+#speakButton:hover {
     background-color: #45a049;
+}
+
+#stopButton {
+    background-color: #f44336;
+}
+
+#stopButton:hover {
+    background-color: #d32f2f;
+}
+
+#clearButton {
+    background-color: #2196F3;
+}
+
+#clearButton:hover {
+    background-color: #1976D2;
 }
 
 .options {
